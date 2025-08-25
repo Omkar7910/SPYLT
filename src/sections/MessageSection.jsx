@@ -4,12 +4,17 @@ import { SplitText } from "gsap/all";
 
 const MessageSection = () => {
   useGSAP(() => {
-    const firstMsgSplit = SplitText.create(".first-message", { type: "words" });
-    const secMsgSplit = SplitText.create(".second-message", { type: "words" });
-    const pargraphSplit = SplitText.create(".message-content p", {
+    const firstMsgSplit = SplitText.create(".first-message", {
+      type: "words",
+    });
+    const secMsgSplit = SplitText.create(".second-message", {
+      type: "words",
+    });
+    const paragraphSplit = SplitText.create(".message-content p", {
       type: "words, lines",
       linesClass: "paragraph-line",
     });
+
     gsap.to(firstMsgSplit.words, {
       color: "#faeade",
       ease: "power1.in",
@@ -36,29 +41,28 @@ const MessageSection = () => {
     const revealTl = gsap.timeline({
       delay: 1,
       scrollTrigger: {
-        trigger: ".message-content",
+        trigger: ".msg-text-scroll",
         start: "top 60%",
       },
     });
     revealTl.to(".msg-text-scroll", {
       duration: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: "circ.inout",
+      ease: "circ.inOut",
     });
 
     const paragraphTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".message-content p",
         start: "top center",
-        // markers: true,
       },
     });
-    paragraphTl.from(pargraphSplit.words, {
+    paragraphTl.from(paragraphSplit.words, {
       yPercent: 300,
       rotate: 3,
+      ease: "power1.inOut",
       duration: 1,
       stagger: 0.01,
-      ease: "power1.inout",
     });
   });
 
@@ -70,7 +74,9 @@ const MessageSection = () => {
             <h1 className="first-message">Stir up your fearless past and</h1>
 
             <div
-              style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
+              style={{
+                clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
+              }}
               className="msg-text-scroll"
             >
               <div className="bg-light-brown md:pb-5 pb-3 px-5">
@@ -79,7 +85,7 @@ const MessageSection = () => {
             </div>
 
             <h1 className="second-message">
-              your future with every gulp of Perfect Protein.
+              your future with every gulp of Perfect Protein
             </h1>
           </div>
 
@@ -87,8 +93,8 @@ const MessageSection = () => {
             <div className="max-w-md px-10 flex-center overflow-hidden">
               <p>
                 Rev up your rebel spirit and feed the adventure of life with
-                SPYLT, where you're one chug away from epic nostalgia and
-                fearless fun.{" "}
+                SPYLT, where you’re one chug away from epic nostalgia and
+                fearless fun.
               </p>
             </div>
           </div>
