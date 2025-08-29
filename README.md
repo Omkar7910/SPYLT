@@ -14,11 +14,10 @@
 
  </div>
 
- <h3 style="font-weight:700;font-size:30px;">AWWWARDS Site of the Day Website</h3>
+ <h3 style="font-weight:700;font-size:30px;">SPYLT - An AWWWARDS Website</h3>
 
   <div >
-    Ready to build a website that has won an Awwwards Site of the Day?
-    This tutorial guides you through creating a stunning, interactive site using <b>GSAP</b>, <b>ReactJS</b>, and <b>Tailwind CSS</b>.
+    An interactive and visually stunning website built with React, Tailwind CSS, and GSAP, inspired by Awwwards Site of the Day designs. It features smooth animations, scroll effects, and a fully responsive layout.
    </div>
 </div>
 
@@ -30,11 +29,12 @@
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Snippets (Code to Copy)](#snippets)
 6. 🔗 [Assets](#links)
-7. 🌐 [Community](#more)
 
 ## Introduction
 
-Dive into creating a cutting-edge web experience designed for Awwwards recognition, with **GSAP (GreenSock Animation Platform)** at its core. This project demonstrates how to leverage GSAP's powerful animation capabilities to craft fluid transitions, captivating scroll effects, and dynamic UI interactions, combining it with React and Tailwind CSS for a truly immersive and visually stunning website.
+This project is my creative take on an Awwwards-winning website. Instead of simply cloning the original, I added my own design style, custom animations, and unique interactions to give it a fresh touch. Built with **React**, **Tailwind CSS**, and **GSAP**, it delivers smooth scrolling, dynamic transitions, and a fully responsive layout.
+
+The goal was to push my skills in **modern UI/UX design**, master **GSAP animations**, and create an experience that feels immersive and visually appealing—something beyond just functionality.
 
 ## Tech Stack
 
@@ -44,21 +44,21 @@ Dive into creating a cutting-edge web experience designed for Awwwards recogniti
 
 ## Features
 
-In this course, You’ll learn how to:
+Here are some features implemented:
 
-- ✨ Parallax Like a Pro
+- ✨ Parallax effect
 - ⚡️ Master Clip-Path Magic
 - 🕹️ Control ScrollTrigger & ScrollSmoother
 - 😉 Pin Elements with Style
 - 🧑‍💻 Reveal Text Like Awwwards Pros
-- 👏 Build GSAP Timelines that Actually Feel Good
+- 👏 GSAP Timelines that Actually Feel Good
 - 📱 It's Fully responsive and mobile-friendly
 
 ## Quick Start
 
 ```bash
 # 1. Clone the repo
-git clone [https://github.com/FullStackEmpire/gsap-awwwards-website.git](https://github.com/FullStackEmpire/gsap-awwwards-website.git)
+git clone [https://github.com/Omkar7910/SPYLT](https://github.com/Omkar7910/SPYLT)
 
 # 2. Install dependencies
 npm install
@@ -467,12 +467,6 @@ export { flavorlists, nutrientLists, cards };
 
 ## Assets
 
-- 🎥 Videos: [`/public/videos`](https://github.com/Fullstack-Empire/GSAP-Awwwards-Website/tree/main/public/videos)
-- 📚 Fonts: [`/public/fonts`](https://github.com/Fullstack-Empire/GSAP-Awwwards-Website/tree/main/public/fonts)
-- 🖼️ Images: [`/public/images`](https://github.com/Fullstack-Empire/GSAP-Awwwards-Website/tree/main/public/images)
-
-## Community
-
-Join the community and connect with other developers!
-
-[![Discord](https://img.shields.io/discord/your-server-id?label=Join%20Discord&logo=discord&style=for-the-badge&color=5865F2)](https://discord.gg/cbtfr4BHF9)
+- 🎥 Videos: [`/public/videos`](https://github.com/Omkar7910/SPYLT/tree/main/public/videos)
+- 📚 Fonts: [`/public/fonts`](https://github.com/Omkar7910/SPYLT/tree/main/public/fonts)
+- 🖼️ Images: [`/public/images`](https://github.com/Omkar7910/SPYLT/tree/main/public/images)
