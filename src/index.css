@@ -173,7 +173,8 @@ body::-webkit-scrollbar {
     }
 
     .nutrition-box {
-      @apply absolute md:bottom-16 bottom-5 w-full md:px-0 px-5;
+      @apply absolute md:bottom-16  bottom-5 w-full md:px-0 px-5 ;
+      @apply left-1/2 -translate-x-1/2;
 
       .list-wrapper {
         @apply bg-[#fdebd2] rounded-full border-[.5vw] border-[#e8ddca] mx-auto max-w-7xl md:py-8 py-5 md:px-0 px-5 flex justify-between items-center;
@@ -190,7 +191,8 @@ body::-webkit-scrollbar {
   }
 
   .benefit-section {
-    @apply min-h-dvh bg-[#222123] overflow-hidden relative;
+    @apply min-h-dvh bg-[#222123] overflow-hidden relative ;
+    @apply md:pb-0 pb-280;
 
     p {
       @apply text-milk font-paragraph text-center text-lg;
@@ -241,7 +243,7 @@ body::-webkit-scrollbar {
     }
 
     h1 {
-      @apply uppercase text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
+      @apply uppercase text-[18vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
     }
   }
 

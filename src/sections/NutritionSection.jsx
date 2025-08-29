@@ -108,8 +108,8 @@ const NutritionSection = () => {
               <div key={index} className="relative flex-1 col-center">
                 <div>
                   <p className="md:text-lg font-paragraph">{nutrient.label}</p>
-                  <p className="font-paragraph text-sm mt-2">up to</p>
-                  <p className="text-2xl md:text-4xl tracking-tighter font-bold">
+                  <p className="font-paragraph text-sm mt-0">up to</p>
+                  <p className="text-2xl md:text-3xl tracking-tighter font-bold">
                     {nutrient.amount}
                   </p>
                 </div>
